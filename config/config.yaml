@@ -55,28 +55,49 @@ schedule:
 platforms:
   enabled: true                         # 是否启用热榜平台抓取
   sources:
-    - id: "toutiao"
-      name: "今日头条"
-    # - id: "baidu"
-    #   name: "百度热搜"
+    # 财经与宏观快讯：优先覆盖中国宏观、国际宏观、央行政策、市场数据与重要经济事件
+    - id: "wallstreetcn-quick"
+      name: "华尔街见闻快讯"
+    - id: "wallstreetcn-news"
+      name: "华尔街见闻最新"
     - id: "wallstreetcn-hot"
-      name: "华尔街见闻"
+      name: "华尔街见闻最热"
+    - id: "cls-telegraph"
+      name: "财联社电报"
+    - id: "cls-depth"
+      name: "财联社深度"
+    - id: "cls-hot"
+      name: "财联社热门"
+    - id: "jin10"
+      name: "金十数据"
+    - id: "fastbull-express"
+      name: "法布财经快讯"
+    - id: "fastbull-news"
+      name: "法布财经头条"
+    - id: "mktnews-flash"
+      name: "MKTNews快讯"
+    - id: "gelonghui"
+      name: "格隆汇"
+
+    # 国际宏观与区域经济：补充全球、中国周边、东南亚与国际政治经济信息
+    - id: "zaobao"
+      name: "联合早报"
+    - id: "cankaoxiaoxi"
+      name: "参考消息"
+
+    # 综合新闻辅助源：用于捕捉国内政策、统计发布、部委动态与重大公共事件
     - id: "thepaper"
       name: "澎湃新闻"
-    # - id: "bilibili-hot-search"
-    #   name: "bilibili 热搜"
-    # - id: "cls-hot"
-    #   name: "财联社热门"
-    # - id: "ifeng"
-    #   name: "凤凰网"
-    # - id: "tieba"
-    #   name: "贴吧"
-    # - id: "weibo"
-    #   name: "微博"
-    # - id: "douyin"
-    #   name: "抖音"
-    # - id: "zhihu"
-    #   name: "知乎"
+    - id: "ifeng"
+      name: "凤凰网"
+    - id: "tencent-hot"
+      name: "腾讯新闻综合早报"
+
+    # 泛热榜辅助源：建议配合宏观关键词过滤使用，避免娱乐与社会热点噪声
+    - id: "toutiao"
+      name: "今日头条"
+    - id: "baidu"
+      name: "百度热搜"
 
 
 
